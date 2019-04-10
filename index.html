@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/png" src="/Sprites/dirkcord.jpg">
+        <link rel="icon" type="image/png" src="https://i.imgur.com/jokD1fK.jpg">
     <title>
         Yut Simulator
     </title>
@@ -64,39 +64,39 @@
                     var dieTwoNumber = Phaser.Math.Between(1, 2);
                     var dieThreeNumber = Phaser.Math.Between(1, 2);
                     var dieFourNumber = Phaser.Math.Between(1, 2);
-                    var offset = Phaser.Math.Between(0, )
+                    var offset = Phaser.Math.Between(0, 5);
                     center.create(200, 200, 'board');
                     if (dieOneNumber === 1)
                     {
-                        this.add.image(150, 150, 'DieOne');
+                        this.add.image(150 - offset, 150 - offset, 'DieOne');
                     }
                     else if (dieOneNumber === 2)
                     {
-                        this.add.image(150, 150, 'DieTwo');
+                        this.add.image(150 - offset, 150 - offset, 'DieTwo');
                     }
                     if (dieTwoNumber === 1)
                     {
-                        this.add.image(250, 250, 'DieOne');
+                        this.add.image(250 + offset, 250 + offset, 'DieOne');
                     }
                     else if (dieTwoNumber === 2)
                     {
-                        this.add.image(250, 250, 'DieTwo');
+                        this.add.image(250 + offset, 250 + offset, 'DieTwo');
                     }
                     if (dieThreeNumber === 1)
                     {
-                        this.add.image(150, 250, 'DieOne');
+                        this.add.image(150 - offset, 250 + offset, 'DieOne');
                     }
                     else if (dieThreeNumber === 2)
                     {
-                        this.add.image(150, 250, 'DieTwo');
+                        this.add.image(150 - offset, 250 + offset, 'DieTwo');
                     }
                     if (dieFourNumber === 1)
                     {
-                        this.add.image(250, 150, 'DieThree');
+                        this.add.image(250 + offset, 150 - offset, 'DieThree');
                     }
                     else if (dieFourNumber === 2)
                     {
-                        this.add.image(250, 150, 'DieTwo');
+                        this.add.image(250 + offset, 150 - offset, 'DieTwo');
                     }
                 }
 
